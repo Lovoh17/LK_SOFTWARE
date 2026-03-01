@@ -4,7 +4,6 @@
     <HeroSection />
     <MarqueeBanner />
     <SobreNosotros />
-    <BeneficiosSection />
     <PlanesSection />
     <ComoFunciona />
     <DocumentosSection />
