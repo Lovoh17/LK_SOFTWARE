@@ -1,5 +1,6 @@
 <template>
   <div class="font-body bg-paper text-ink min-h-screen">
+    <Analytics />
     <NavBar />
     <HeroSection />
     <MarqueeBanner />
@@ -13,6 +14,7 @@
 </template>
 
 <script setup>
+import { Analytics } from '@vercel/analytics/vue'
 import NavBar from './components/NavBar.vue'
 import HeroSection from './components/HeroSection.vue'
 import MarqueeBanner from './components/MarqueeBanner.vue'
