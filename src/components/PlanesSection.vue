@@ -1,14 +1,14 @@
 <template>
-  <section id="planes" class="py-24 bg-paper">
+  <section id="planes" class="py-16 md:py-24 bg-paper">
     <div class="max-w-6xl mx-auto px-6">
 
       <!-- Encabezado -->
-      <div class="mb-16">
+      <div class="mb-12 md:mb-16">
         <span class="badge mb-4 inline-block">Precios transparentes</span>
-        <h2 class="font-display text-6xl text-ink leading-none">
+        <h2 class="font-display text-4xl md:text-6xl text-ink leading-none">
           PLANES DE<br />FACTURACIÓN
         </h2>
-        <p class="text-ink/50 mt-4 max-w-md">
+        <p class="text-ink/50 mt-4 max-w-full md:max-w-md">
           Elige el plan que se adapta al volumen de documentos que tu empresa necesita emitir.
         </p>
       </div>
@@ -35,17 +35,17 @@
       </div>
 
       <!-- Cards -->
-      <div class="grid md:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div
           v-for="(plan, index) in planes"
           :key="plan.name"
-          class="plan-card border-2 border-ink p-8"
+          class="plan-card border-2 border-ink p-6 md:p-8"
           :class="index === 1 ? 'bg-ink text-paper' : 'bg-paper text-ink'"
         >
           <!-- Cabecera -->
           <div class="flex items-start justify-between mb-8">
             <div>
-              <div class="font-display text-3xl tracking-wider">{{ plan.name }}</div>
+              <div class="font-display text-2xl md:text-3xl tracking-wider">{{ plan.name }}</div>
               <div class="text-sm mt-1" :class="index === 1 ? 'text-paper/50' : 'text-ink/40'">
                 Hasta {{ plan.dte }} DTE / mes
               </div>
@@ -55,7 +55,7 @@
 
           <!-- Precio -->
           <div class="mb-8">
-            <div class="font-display text-5xl leading-none">
+            <div class="font-display text-4xl md:text-5xl leading-none">
               {{ anual ? plan.costoAnual : plan.costoMensual }}
             </div>
             <div class="text-sm mt-1" :class="index === 1 ? 'text-paper/50' : 'text-ink/40'">

@@ -1,5 +1,5 @@
 <template>
-  <section id="nosotros" class="py-28 bg-ink text-paper overflow-hidden relative">
+  <section id="nosotros" class="py-16 md:py-28 bg-ink text-paper overflow-hidden relative">
 
     <!-- Decoración tipográfica de fondo -->
     <div class="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none select-none">
@@ -8,12 +8,12 @@
 
     <div class="max-w-6xl mx-auto px-6 relative z-10">
 
-      <div class="grid md:grid-cols-2 gap-16 items-center">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
 
         <!-- Columna izquierda: texto -->
         <div>
           <span class="bg-paper text-ink badge mb-6 inline-block">Sobre nosotros</span>
-          <h2 class="font-display text-6xl leading-none mb-8">
+          <h2 class="font-display text-4xl md:text-6xl leading-none mb-6 md:mb-8">
             SOFTWARE<br />A LA<br /><span class="text-paper/25">MEDIDA</span>
           </h2>
           <p class="text-paper/65 leading-relaxed mb-6">
@@ -51,7 +51,7 @@
           <div
             v-for="servicio in servicios"
             :key="servicio.nombre"
-            class="servicio-item border border-paper/15 p-5 group hover:border-paper/50 transition-colors"
+            class="servicio-item border border-paper/15 p-4 md:p-5 group hover:border-paper/50 transition-colors"
           >
             <div class="flex items-start gap-4">
               <div class="w-10 h-10 border border-paper/20 flex items-center justify-center flex-shrink-0 group-hover:border-paper/50 transition-colors">

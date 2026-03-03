@@ -1,12 +1,12 @@
 <template>
-  <section class="hero-grid pt-32 pb-20 min-h-screen flex flex-col justify-center">
+  <section class="hero-grid pt-20 pb-16 md:pt-32 md:pb-20 min-h-screen flex flex-col justify-center">
     <div class="max-w-6xl mx-auto px-6 w-full">
-      <div class="grid md:grid-cols-2 gap-16 items-center">
+      <div class="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
 
         <!-- Texto principal -->
         <div class="animate-fade-up">
           <span class="badge mb-6 inline-block">El Salvador · DTE Certificado</span>
-          <h1 class="font-display text-7xl md:text-8xl leading-none text-ink mb-6">
+          <h1 class="font-display text-5xl md:text-7xl lg:text-8xl leading-none text-ink mb-6">
             FACTURACIÓN<br />
             <span class="text-ink/25">ELECTRÓNICA</span><br />
             SIMPLE
@@ -27,15 +27,15 @@
 
         <!-- Tarjeta de stats -->
         <div class="animate-fade-up delay-200">
-          <div class="border-2 border-ink p-8 bg-paper relative">
+          <div class="border-2 border-ink p-6 md:p-8 bg-paper relative">
             <div class="absolute -top-3 left-6 badge">Datos clave</div>
-            <div class="grid grid-cols-2 gap-8 mt-4">
+            <div class="grid grid-cols-2 gap-4 md:gap-8 mt-4">
               <div
                 v-for="stat in stats"
                 :key="stat.label"
                 class="border-b border-ink/10 pb-6"
               >
-                <div class="font-display text-4xl text-ink">{{ stat.value }}</div>
+                <div class="font-display text-3xl md:text-4xl text-ink">{{ stat.value }}</div>
                 <div class="text-xs text-ink/50 uppercase tracking-widest mt-1">{{ stat.label }}</div>
               </div>
             </div>

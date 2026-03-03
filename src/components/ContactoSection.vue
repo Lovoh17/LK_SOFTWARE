@@ -1,24 +1,24 @@
 <template>
-  <section id="contacto" class="py-24 bg-ink text-paper">
+  <section id="contacto" class="py-16 md:py-24 bg-ink text-paper">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 gap-16 items-center">
+      <div class="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
 
         <!-- Info de contacto -->
         <div>
-          <span class="bg-paper text-ink badge mb-6 inline-block">Contáctanos</span>
-          <h2 class="font-display text-6xl leading-none mb-6">
+          <span class="bg-paper text-ink badge mb-4 md:mb-6 inline-block">Contáctanos</span>
+          <h2 class="font-display text-4xl md:text-6xl leading-none mb-4 md:mb-6">
             HABLEMOS<br /><span class="text-paper/25">HOY</span>
           </h2>
-          <p class="text-paper/50 mb-10 leading-relaxed">
+          <p class="text-paper/50 mb-6 md:mb-10 leading-relaxed">
             ¿Tienes dudas sobre qué plan es el adecuado para tu empresa? Nuestro equipo está
             listo para asesorarte sin compromiso.
           </p>
 
-          <div class="space-y-5">
+          <div class="space-y-4 md:space-y-5">
             <div
               v-for="item in contactInfo"
               :key="item.label"
-              class="flex items-center gap-4 border-b border-paper/10 pb-5"
+              class="flex items-center gap-4 border-b border-paper/10 pb-4 md:pb-5"
             >
               <div class="w-10 h-10 border border-paper/20 flex items-center justify-center flex-shrink-0">
                 <svg class="w-5 h-5 text-paper/60" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
@@ -36,7 +36,7 @@
         </div>
 
         <!-- Formulario -->
-        <div class="border border-paper/20 p-8">
+        <div class="border border-paper/20 p-6 md:p-8">
           <h3 class="font-display text-2xl tracking-wider mb-6">SOLICITAR INFORMACIÓN</h3>
 
           <form @submit.prevent="enviarFormulario" class="space-y-5">
@@ -74,7 +74,7 @@
             <button
               type="submit"
               :disabled="enviando"
-              class="w-full bg-paper text-ink py-4 font-medium text-sm hover:bg-paper/80 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              class="w-full bg-paper text-ink py-3 md:py-4 font-medium text-sm hover:bg-paper/80 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
             >
               <svg v-if="enviando" class="animate-spin w-4 h-4" fill="none" viewBox="0 0 24 24">
                 <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/>

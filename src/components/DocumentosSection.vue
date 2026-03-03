@@ -1,13 +1,13 @@
 <template>
-  <section class="py-24 docs-grid">
+  <section class="py-16 md:py-24 docs-grid">
     <div class="max-w-6xl mx-auto px-6">
 
-      <div class="mb-16">
+      <div class="mb-12 md:mb-16">
         <span class="badge mb-4 inline-block">Documentos soportados</span>
-        <h2 class="font-display text-6xl text-ink leading-none">
+        <h2 class="font-display text-4xl md:text-6xl text-ink leading-none">
           TIPOS DE<br />DOCUMENTOS
         </h2>
-        <p class="text-ink/50 mt-4 max-w-md">
+        <p class="text-ink/50 mt-4 max-w-full md:max-w-md">
           Todos los Documentos Tributarios Electrónicos exigidos por el Ministerio de Hacienda de El Salvador.
         </p>
       </div>
@@ -16,9 +16,9 @@
         <div
           v-for="doc in documentos"
           :key="doc.nombre"
-          class="doc-card border border-ink p-6 group cursor-default"
+          class="doc-card border border-ink p-4 md:p-6 group cursor-default"
         >
-          <div class="font-display text-lg tracking-wider text-ink group-hover:text-paper transition-colors">
+          <div class="font-display text-base md:text-lg tracking-wider text-ink group-hover:text-paper transition-colors">
             {{ doc.nombre }}
           </div>
           <div class="text-xs text-ink/40 group-hover:text-paper/60 mt-1 transition-colors">
