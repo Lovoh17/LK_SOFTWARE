@@ -1,9 +1,9 @@
 <template>
   <section id="nosotros" class="py-16 md:py-28 bg-etrib-deep text-paper overflow-hidden relative">
 
-    <!-- Decoración tipográfica de fondo -->
-    <div class="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none select-none">
-      <div class="font-display text-[20rem] leading-none text-paper/[0.02] whitespace-nowrap">LK</div>
+    <!-- Decoración de fondo -->
+    <div class="absolute inset-0 flex items-center justify-end overflow-hidden pointer-events-none select-none pr-8 md:pr-20">
+      <img src="../img/etrib-mark.svg" alt="" class="w-64 md:w-96 opacity-[0.04]" />
     </div>
 
     <div class="max-w-6xl mx-auto px-6 relative z-10">

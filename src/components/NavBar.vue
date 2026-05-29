@@ -4,10 +4,12 @@
 
       <!-- Logo -->
       <div class="flex items-center gap-3">
-        <LKLogo :size="36" color="#F5F2EA" />
+        <LKLogo :size="36" variant="light" />
         <div>
-          <div class="font-display text-xl leading-none tracking-wider text-paper">LK SOFTWARE</div>
-          <div class="text-[9px] tracking-[0.2em] uppercase text-paper/50">Development</div>
+          <div class="font-display text-xl leading-none tracking-wider text-paper">
+            e<span class="text-etrib-mint">·</span>trib
+          </div>
+          <div class="text-[9px] tracking-[0.2em] uppercase text-paper/50">Facturación Electrónica · SV</div>
         </div>
       </div>
 
@@ -38,10 +40,10 @@
 import LKLogo from './LKLogo.vue'
 
 const navLinks = [
-  { href: '#nosotros', label: 'Nosotros' },
-  { href: '#planes', label: 'Planes' },
-  { href: '#como-funciona', label: 'Cómo funciona' },
-  { href: '#contacto', label: 'Contacto' },
+  { href: '#nosotros',       label: 'Nosotros' },
+  { href: '#planes',         label: 'Planes' },
+  { href: '#como-funciona',  label: 'Cómo funciona' },
+  { href: '#contacto',       label: 'Contacto' },
 ]
 </script>
 

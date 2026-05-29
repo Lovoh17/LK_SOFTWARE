@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460" width="400" height="460">
+  <g transform="translate(120,20)">
+    <rect width="160" height="160" rx="36" fill="#0F4C5C"></rect>
+    <g fill="#F5F2EA">
+      <rect x="40" y="37" width="72" height="14" rx="3"></rect>
+      <rect x="40" y="73" width="52" height="14" rx="3"></rect>
+      <rect x="40" y="109" width="72" height="14" rx="3"></rect>
+    </g>
+    <circle cx="122" cy="116" r="12" fill="#2EC4B6"></circle>
+    <path d="M117 116 l4 4 l8 -8" fill="none" stroke="#0F4C5C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path>
+  </g>
+  <g transform="translate(200,300)" fill="#0F4C5C" font-family="DM Sans, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="84" letter-spacing="-3">e<tspan fill="#2EC4B6">·</tspan>trib</text>
+  </g>
+  <text x="200" y="350" font-family="JetBrains Mono, ui-monospace, monospace" font-size="13" letter-spacing="5" fill="#1A1A1A" opacity="0.55" text-anchor="middle">FACTURACIÓN ELECTRÓNICA · SV</text>
+</svg>

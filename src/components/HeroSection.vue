@@ -6,7 +6,7 @@
         <!-- Texto principal -->
         <div class="animate-fade-up">
           <span class="badge mb-6 inline-block">El Salvador · DTE Certificado</span>
-          <h1 class="font-display text-5xl md:text-7xl lg:text-8xl leading-none text-ink mb-6">
+          <h1 class="font-display text-5xl md:text-7xl lg:text-5xl leading-none text-ink mb-6">
             FACTURACIÓN<br />
             <span class="text-etrib-teal/30">ELECTRÓNICA</span><br />
             SIMPLE
@@ -25,25 +25,37 @@
           </div>
         </div>
 
-        <!-- Tarjeta de stats -->
-        <div class="animate-fade-up delay-200">
-          <div class="border-2 border-etrib-teal/30 p-6 md:p-8 bg-paper relative">
+        <!-- Visual de marca + stats -->
+        <div class="animate-fade-up delay-200 flex flex-col gap-6">
+
+          <!-- Lockup del producto -->
+          <div class="flex justify-center md:justify-start">
+            <img
+              src="../img/etrib-lockup-h.svg"
+              alt="e·trib – Facturación Electrónica"
+              class="w-full max-w-sm md:max-w-full h-auto"
+            />
+          </div>
+
+          <!-- Stats -->
+          <div class="border-2 border-etrib-teal/30 p-6 bg-paper relative">
             <div class="absolute -top-3 left-6 badge">Datos clave</div>
-            <div class="grid grid-cols-2 gap-4 md:gap-8 mt-4">
+            <div class="grid grid-cols-2 gap-4 md:gap-6 mt-4">
               <div
                 v-for="stat in stats"
                 :key="stat.label"
-                class="border-b border-etrib-teal/15 pb-6"
+                class="border-b border-etrib-teal/15 pb-4"
               >
                 <div class="font-display text-3xl md:text-4xl text-etrib-teal">{{ stat.value }}</div>
                 <div class="text-xs text-ink/50 uppercase tracking-widest mt-1">{{ stat.label }}</div>
               </div>
             </div>
-            <div class="mt-6 pt-6 border-t border-etrib-teal/15 flex items-center gap-3">
+            <div class="mt-5 pt-5 border-t border-etrib-teal/15 flex items-center gap-3">
               <div class="w-2 h-2 rounded-full bg-etrib-mint animate-pulse"></div>
               <span class="text-sm text-ink/60">Sistema activo · San Miguel, El Salvador</span>
             </div>
           </div>
+
         </div>
 
       </div>

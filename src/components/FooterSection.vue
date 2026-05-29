@@ -7,14 +7,16 @@
         <!-- Brand -->
         <div class="text-center md:text-left">
           <div class="flex items-center gap-3 mb-4 justify-center md:justify-start">
-            <LKLogo :size="24" class="md:size-32" color="#0F4C5C" />
+            <LKLogo :size="32" variant="light" />
             <div>
-              <div class="font-display text-lg leading-none tracking-wider text-etrib-teal">LK SOFTWARE</div>
-              <div class="text-[8px] tracking-[0.2em] uppercase text-ink/40">Development</div>
+              <div class="font-display text-lg leading-none tracking-wider text-etrib-teal">
+                e<span class="text-etrib-mint">·</span>trib
+              </div>
+              <div class="text-[8px] tracking-[0.2em] uppercase text-ink/40">by LK Software</div>
             </div>
           </div>
           <p class="text-ink/50 text-sm leading-relaxed">
-            Sistema de Facturación Electrónica certificado para empresas salvadoreñas.
+            Sistema de Facturación Electrónica DTE certificado para empresas salvadoreñas.
           </p>
         </div>
 
@@ -34,11 +36,11 @@
         <div class="text-center md:text-left">
           <div class="font-display tracking-wider text-etrib-teal mb-4">CONTACTO</div>
           <ul class="space-y-3 text-sm text-ink/50">
-            <li v-for="item in contactInfo" :key="item.label" class="flex items-center gap-2 justify-center md:justify-start">
+            <li v-for="item in contactInfo" :key="item.text" class="flex items-center gap-2 justify-center md:justify-start">
               <svg class="w-4 h-4 flex-shrink-0 text-etrib-teal/60" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                 <path v-if="item.icon === 'location'" stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/>
-                <path v-if="item.icon === 'phone'" stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
-                <path v-if="item.icon === 'clock'" stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                <path v-if="item.icon === 'phone'"    stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
+                <path v-if="item.icon === 'clock'"    stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
               </svg>
               <span>{{ item.text }}</span>
             </li>
@@ -50,7 +52,7 @@
       <!-- Bottom bar -->
       <div class="border-t border-etrib-teal/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-ink/40">
         <span>© {{ currentYear }} LK Software Development. Todos los derechos reservados.</span>
-        <span>Sistema DTE · Ministerio de Hacienda El Salvador</span>
+        <span>e·trib · Sistema DTE · Ministerio de Hacienda El Salvador</span>
       </div>
 
     </div>
