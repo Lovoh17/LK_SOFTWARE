@@ -1,13 +1,13 @@
 <template>
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-paper/90 backdrop-blur border-b border-ink/10">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-etrib-nav/95 backdrop-blur border-b border-paper/10">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
 
       <!-- Logo -->
       <div class="flex items-center gap-3">
-        <LKLogo :size="36" />
+        <LKLogo :size="36" color="#F5F2EA" />
         <div>
-          <div class="font-display text-xl leading-none tracking-wider text-ink">LK SOFTWARE</div>
-          <div class="text-[9px] tracking-[0.2em] uppercase text-ink/50">Development</div>
+          <div class="font-display text-xl leading-none tracking-wider text-paper">LK SOFTWARE</div>
+          <div class="text-[9px] tracking-[0.2em] uppercase text-paper/50">Development</div>
         </div>
       </div>
 
@@ -17,7 +17,7 @@
           v-for="link in navLinks"
           :key="link.href"
           :href="link.href"
-          class="nav-link text-ink/70 hover:text-ink transition-colors"
+          class="nav-link text-paper/70 hover:text-paper transition-colors"
         >
           {{ link.label }}
         </a>
@@ -26,7 +26,7 @@
       <!-- CTA -->
       <a
         href="#contacto"
-        class="bg-ink text-paper px-5 py-2 text-sm font-medium hover:bg-ink/80 transition-colors"
+        class="bg-etrib-teal text-paper px-5 py-2 text-sm font-medium hover:bg-etrib-deep transition-colors"
       >
         Comenzar ahora
       </a>
@@ -56,7 +56,7 @@ const navLinks = [
   left: 0;
   width: 0;
   height: 2px;
-  background: #0a0a0a;
+  background: var(--etrib-mint);
   transition: width 0.3s ease;
 }
 .nav-link:hover::after {

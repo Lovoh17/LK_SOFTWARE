@@ -16,7 +16,7 @@
         <div
           v-for="doc in documentos"
           :key="doc.nombre"
-          class="doc-card border border-ink p-4 md:p-6 group cursor-default"
+          class="doc-card border border-etrib-teal/30 p-4 md:p-6 group cursor-default"
         >
           <div class="font-display text-base md:text-lg tracking-wider text-ink group-hover:text-paper transition-colors">
             {{ doc.nombre }}
@@ -45,8 +45,8 @@ const documentos = [
 <style scoped>
 .docs-grid {
   background-image:
-    linear-gradient(rgba(10, 10, 10, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(10, 10, 10, 0.04) 1px, transparent 1px);
+    linear-gradient(rgba(15, 76, 92, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 76, 92, 0.05) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
@@ -54,7 +54,7 @@ const documentos = [
   transition: background-color 0.25s ease, transform 0.25s ease;
 }
 .doc-card:hover {
-  background-color: #0a0a0a;
+  background-color: #0F4C5C;
   transform: translateY(-3px);
 }
 </style>

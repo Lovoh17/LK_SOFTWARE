@@ -1,4 +1,3 @@
-He ajustado las clases para que la vista sea completamente responsiva, optimizando la visualización en dispositivos móviles, tablets y escritorio. Los cambios principales incluyen:
 <template>
   <section id="beneficios" class="py-16 md:py-28 bg-paper overflow-hidden">
     <div class="max-w-6xl mx-auto px-6">
@@ -8,7 +7,7 @@ He ajustado las clases para que la vista sea completamente responsiva, optimizan
         <div>
           <span class="badge mb-4 inline-block">Por qué elegirnos</span>
           <h2 class="font-display text-4xl md:text-6xl text-ink leading-none">
-            BENEFICIOS DE<br /><span class="text-ink/25">NUESTRO SISTEMA</span>
+            BENEFICIOS DE<br /><span class="text-etrib-teal/25">NUESTRO SISTEMA</span>
           </h2>
         </div>
         <p class="text-ink/50 text-base leading-relaxed md:mb-2">
@@ -22,18 +21,18 @@ He ajustado las clases para que la vista sea completamente responsiva, optimizan
         <div
           v-for="(beneficio, index) in beneficios"
           :key="beneficio.titulo"
-          class="beneficio-card border-2 border-ink p-6 md:p-8 group relative overflow-hidden"
+          class="beneficio-card border-2 border-etrib-teal/20 p-6 md:p-8 group relative overflow-hidden"
           :class="index === 0 ? 'md:col-span-2' : ''"
         >
           <!-- Número de fondo decorativo -->
-          <div class="absolute right-6 top-4 font-display text-7xl md:text-8xl text-ink/5 group-hover:text-ink/10 transition-colors leading-none select-none">
+          <div class="absolute right-6 top-4 font-display text-7xl md:text-8xl text-etrib-teal/5 group-hover:text-etrib-teal/10 transition-colors leading-none select-none">
             0{{ index + 1 }}
           </div>
 
           <div class="relative z-10">
             <!-- Icono -->
-            <div class="w-10 h-10 md:w-12 md:h-12 border-2 border-ink flex items-center justify-center mb-6 group-hover:bg-ink group-hover:text-paper transition-colors">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <div class="w-10 h-10 md:w-12 md:h-12 border-2 border-etrib-teal/40 flex items-center justify-center mb-6 group-hover:bg-etrib-teal group-hover:border-etrib-teal group-hover:text-paper transition-colors">
+              <svg class="w-5 h-5 text-etrib-teal group-hover:text-paper transition-colors" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                 <path :d="beneficio.iconPath" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
@@ -42,8 +41,8 @@ He ajustado las clases para que la vista sea completamente responsiva, optimizan
             <p class="text-ink/55 text-sm leading-relaxed max-w-lg">{{ beneficio.descripcion }}</p>
 
             <!-- Tag decorativo -->
-            <div class="mt-6 inline-flex items-center gap-2 text-xs text-ink/40 border border-ink/15 px-3 py-1">
-              <span class="w-1.5 h-1.5 rounded-full bg-green-500 inline-block"></span>
+            <div class="mt-6 inline-flex items-center gap-2 text-xs text-ink/40 border border-etrib-teal/20 px-3 py-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-etrib-mint inline-block"></span>
               {{ beneficio.tag }}
             </div>
           </div>
@@ -97,6 +96,6 @@ const beneficios = [
 }
 .beneficio-card:hover {
   transform: translateY(-4px);
-  box-shadow: 6px 6px 0px #0a0a0a;
+  box-shadow: 6px 6px 0px #0F4C5C;
 }
 </style>

@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ─── Variables institucionales ────────────────────────── */
+:root {
+  --etrib-teal:  #0F4C5C;
+  --etrib-deep:  #0A3845;
+  --etrib-mint:  #2EC4B6;
+  --etrib-paper: #F5F2EA;
+  --etrib-ink:   #1A1A1A;
+  --etrib-dark:  #1e293b;
+  --etrib-nav:   #0f172a;
+
+  --color-primary-50:  #f0f9fa;
+  --color-primary-100: #d6eef2;
+  --color-primary-200: #a8d9e7;
+  --color-primary-300: #6bbdd5;
+  --color-primary-400: #2EC4B6;
+  --color-primary-500: #1a8fa0;
+  --color-primary-600: #0F4C5C;
+  --color-primary-700: #0A3845;
+  --color-primary-800: #072d38;
+  --color-primary-900: #04212a;
+  --color-primary-950: #021518;
+}
 
 /* ─── Custom global utilities ─────────────────────────── */
 @layer components {
@@ -12,5 +34,5 @@
 
 /* ─── Scrollbar sutil ─────────────────────────────────── */
 ::-webkit-scrollbar        { width: 6px; }
-::-webkit-scrollbar-track  { background: #f7f5f0; }
-::-webkit-scrollbar-thumb  { background: #0a0a0a; border-radius: 0; }
+::-webkit-scrollbar-track  { background: var(--etrib-paper); }
+::-webkit-scrollbar-thumb  { background: var(--etrib-teal);  border-radius: 0; }

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-ink py-4 overflow-hidden border-y border-ink">
+  <div class="bg-etrib-deep py-4 overflow-hidden border-y border-etrib-deep">
     <div class="marquee-track">
       <span
         v-for="i in 14"

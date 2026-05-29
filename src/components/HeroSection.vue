@@ -8,7 +8,7 @@
           <span class="badge mb-6 inline-block">El Salvador · DTE Certificado</span>
           <h1 class="font-display text-5xl md:text-7xl lg:text-8xl leading-none text-ink mb-6">
             FACTURACIÓN<br />
-            <span class="text-ink/25">ELECTRÓNICA</span><br />
+            <span class="text-etrib-teal/30">ELECTRÓNICA</span><br />
             SIMPLE
           </h1>
           <p class="text-ink/60 text-lg leading-relaxed mb-10 max-w-md">
@@ -16,10 +16,10 @@
             salvadoreñas. Rápido, seguro y en cumplimiento con el Ministerio de Hacienda.
           </p>
           <div class="flex flex-col sm:flex-row gap-4">
-            <a href="#planes" class="bg-ink text-paper px-8 py-4 text-sm font-medium text-center hover:bg-ink/80 transition-colors">
+            <a href="#planes" class="bg-etrib-teal text-paper px-8 py-4 text-sm font-medium text-center hover:bg-etrib-deep transition-colors">
               Ver planes →
             </a>
-            <a href="#como-funciona" class="border-2 border-ink px-8 py-4 text-sm font-medium text-center hover:bg-ink hover:text-paper transition-colors">
+            <a href="#como-funciona" class="border-2 border-etrib-teal text-etrib-teal px-8 py-4 text-sm font-medium text-center hover:bg-etrib-teal hover:text-paper transition-colors">
               Cómo funciona
             </a>
           </div>
@@ -27,20 +27,20 @@
 
         <!-- Tarjeta de stats -->
         <div class="animate-fade-up delay-200">
-          <div class="border-2 border-ink p-6 md:p-8 bg-paper relative">
+          <div class="border-2 border-etrib-teal/30 p-6 md:p-8 bg-paper relative">
             <div class="absolute -top-3 left-6 badge">Datos clave</div>
             <div class="grid grid-cols-2 gap-4 md:gap-8 mt-4">
               <div
                 v-for="stat in stats"
                 :key="stat.label"
-                class="border-b border-ink/10 pb-6"
+                class="border-b border-etrib-teal/15 pb-6"
               >
-                <div class="font-display text-3xl md:text-4xl text-ink">{{ stat.value }}</div>
+                <div class="font-display text-3xl md:text-4xl text-etrib-teal">{{ stat.value }}</div>
                 <div class="text-xs text-ink/50 uppercase tracking-widest mt-1">{{ stat.label }}</div>
               </div>
             </div>
-            <div class="mt-6 pt-6 border-t border-ink/10 flex items-center gap-3">
-              <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+            <div class="mt-6 pt-6 border-t border-etrib-teal/15 flex items-center gap-3">
+              <div class="w-2 h-2 rounded-full bg-etrib-mint animate-pulse"></div>
               <span class="text-sm text-ink/60">Sistema activo · San Miguel, El Salvador</span>
             </div>
           </div>
@@ -63,8 +63,8 @@ const stats = [
 <style scoped>
 .hero-grid {
   background-image:
-    linear-gradient(rgba(10, 10, 10, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(10, 10, 10, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(15, 76, 92, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 76, 92, 0.06) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 

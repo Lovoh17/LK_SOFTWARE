@@ -1,5 +1,5 @@
 <template>
-  <section id="nosotros" class="py-16 md:py-28 bg-ink text-paper overflow-hidden relative">
+  <section id="nosotros" class="py-16 md:py-28 bg-etrib-deep text-paper overflow-hidden relative">
 
     <!-- Decoración tipográfica de fondo -->
     <div class="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none select-none">
@@ -12,9 +12,9 @@
 
         <!-- Columna izquierda: texto -->
         <div>
-          <span class="bg-paper text-ink badge mb-6 inline-block">Sobre nosotros</span>
+          <span class="bg-etrib-mint text-etrib-deep badge mb-6 inline-block">Sobre nosotros</span>
           <h2 class="font-display text-4xl md:text-6xl leading-none mb-6 md:mb-8">
-            SOFTWARE<br />A LA<br /><span class="text-paper/25">MEDIDA</span>
+            SOFTWARE<br />A LA<br /><span class="text-etrib-mint/30">MEDIDA</span>
           </h2>
           <p class="text-paper/65 leading-relaxed mb-6">
             En <strong class="text-paper font-semibold">LK Software Development</strong> somos una empresa salvadoreña
@@ -35,7 +35,7 @@
               :key="valor"
               class="flex items-center gap-3 text-sm text-paper/70"
             >
-              <span class="w-1.5 h-1.5 bg-paper rounded-full flex-shrink-0"></span>
+              <span class="w-1.5 h-1.5 bg-etrib-mint rounded-full flex-shrink-0"></span>
               {{ valor }}
             </div>
           </div>
@@ -45,17 +45,17 @@
         <div class="space-y-4">
           <div class="mb-6">
             <div class="text-xs text-paper/40 uppercase tracking-widest mb-1">Lo que hacemos</div>
-            <div class="w-8 h-0.5 bg-paper/30"></div>
+            <div class="w-8 h-0.5 bg-etrib-mint/50"></div>
           </div>
 
           <div
             v-for="servicio in servicios"
             :key="servicio.nombre"
-            class="servicio-item border border-paper/15 p-4 md:p-5 group hover:border-paper/50 transition-colors"
+            class="servicio-item border border-paper/15 p-4 md:p-5 group hover:border-etrib-mint/50 transition-colors"
           >
             <div class="flex items-start gap-4">
-              <div class="w-10 h-10 border border-paper/20 flex items-center justify-center flex-shrink-0 group-hover:border-paper/50 transition-colors">
-                <svg class="w-4 h-4 text-paper/50 group-hover:text-paper transition-colors" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <div class="w-10 h-10 border border-paper/20 flex items-center justify-center flex-shrink-0 group-hover:border-etrib-mint/60 group-hover:bg-etrib-mint/10 transition-colors">
+                <svg class="w-4 h-4 text-paper/50 group-hover:text-etrib-mint transition-colors" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                   <path :d="servicio.iconPath" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </div>

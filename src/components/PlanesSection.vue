@@ -20,13 +20,13 @@
         </span>
         <button
           @click="anual = !anual"
-          class="w-12 h-6 rounded-full border-2 border-ink relative transition-colors"
-          :class="anual ? 'bg-ink' : 'bg-transparent'"
+          class="w-12 h-6 rounded-full border-2 border-etrib-teal relative transition-colors"
+          :class="anual ? 'bg-etrib-teal' : 'bg-transparent'"
           aria-label="Cambiar ciclo de facturación"
         >
           <span
-            class="absolute top-0.5 w-4 h-4 border border-ink rounded-full transition-all duration-300"
-            :class="anual ? 'left-6 bg-paper' : 'left-0.5 bg-ink'"
+            class="absolute top-0.5 w-4 h-4 border border-etrib-teal rounded-full transition-all duration-300"
+            :class="anual ? 'left-6 bg-paper' : 'left-0.5 bg-etrib-teal'"
           ></span>
         </button>
         <span :class="anual ? 'text-ink font-semibold' : 'text-ink/40'" class="text-sm transition-colors">
@@ -39,18 +39,18 @@
         <div
           v-for="(plan, index) in planes"
           :key="plan.name"
-          class="plan-card border-2 border-ink p-6 md:p-8"
-          :class="index === 1 ? 'bg-ink text-paper' : 'bg-paper text-ink'"
+          class="plan-card border-2 p-6 md:p-8"
+          :class="index === 1 ? 'bg-etrib-teal text-paper border-etrib-teal' : 'bg-paper text-ink border-etrib-teal/25'"
         >
           <!-- Cabecera -->
           <div class="flex items-start justify-between mb-8">
             <div>
               <div class="font-display text-2xl md:text-3xl tracking-wider">{{ plan.name }}</div>
-              <div class="text-sm mt-1" :class="index === 1 ? 'text-paper/50' : 'text-ink/40'">
+              <div class="text-sm mt-1" :class="index === 1 ? 'text-paper/60' : 'text-ink/40'">
                 Hasta {{ plan.dte }} DTE / mes
               </div>
             </div>
-            <span v-if="index === 1" class="bg-paper text-ink badge text-[9px]">Popular</span>
+            <span v-if="index === 1" class="bg-etrib-mint text-etrib-deep badge text-[9px]">Popular</span>
           </div>
 
           <!-- Precio -->
@@ -58,14 +58,14 @@
             <div class="font-display text-4xl md:text-5xl leading-none">
               {{ anual ? plan.costoAnual : plan.costoMensual }}
             </div>
-            <div class="text-sm mt-1" :class="index === 1 ? 'text-paper/50' : 'text-ink/40'">
+            <div class="text-sm mt-1" :class="index === 1 ? 'text-paper/60' : 'text-ink/40'">
               {{ anual ? 'pago anual' : 'por mes' }}
             </div>
             <Transition name="fade">
               <div
                 v-if="anual"
                 class="text-sm mt-2 font-semibold"
-                :class="index === 1 ? 'text-green-400' : 'text-green-600'"
+                :class="index === 1 ? 'text-etrib-mint' : 'text-etrib-teal'"
               >
                 Ahorro de {{ plan.ahorro }} al año
               </div>
@@ -80,7 +80,7 @@
               class="flex items-start gap-3 text-sm"
               :class="index === 1 ? 'text-paper/80' : 'text-ink/70'"
             >
-              <span class="mt-0.5 flex-shrink-0">✓</span>
+              <span class="mt-0.5 flex-shrink-0" :class="index === 1 ? 'text-etrib-mint' : 'text-etrib-teal'">✓</span>
               <span>{{ feature }}</span>
             </li>
           </ul>
@@ -91,8 +91,8 @@
             class="block text-center py-3 text-sm font-medium transition-colors border-2"
             :class="
               index === 1
-                ? 'border-paper text-ink bg-paper hover:bg-transparent hover:text-paper'
-                : 'border-ink text-paper bg-ink hover:bg-transparent hover:text-ink'
+                ? 'border-paper text-etrib-teal bg-paper hover:bg-transparent hover:text-paper'
+                : 'border-etrib-teal text-paper bg-etrib-teal hover:bg-transparent hover:text-etrib-teal'
             "
           >
             Contratar plan
@@ -162,7 +162,7 @@ const planes = [
 }
 .plan-card:hover {
   transform: translateY(-6px);
-  box-shadow: 8px 8px 0px #0a0a0a;
+  box-shadow: 8px 8px 0px #0F4C5C;
 }
 
 .fade-enter-active,
