@@ -2,26 +2,26 @@
   <div class="bg-etrib-deep py-4 overflow-hidden border-y border-etrib-deep">
     <div class="marquee-track">
       <span
-        v-for="i in 14"
+        v-for="i in 12"
         :key="i"
         class="font-display text-paper/30 text-xl tracking-widest flex-shrink-0"
       >
         DTE &nbsp;·&nbsp; FACTURA ELECTRÓNICA &nbsp;·&nbsp; CRÉDITO FISCAL &nbsp;·&nbsp;
-        NOTA DE REMISIÓN &nbsp;·&nbsp; COMPROBANTE &nbsp;&nbsp;
+        INVENTARIO &nbsp;·&nbsp; POS &nbsp;·&nbsp; PROVEEDORES &nbsp;·&nbsp;
+        CONTABILIDAD &nbsp;·&nbsp; PLANILLA &nbsp;·&nbsp; BI &amp; ANALÍTICA &nbsp;&nbsp;
       </span>
     </div>
   </div>
 </template>
 
 <script setup>
-// Sin lógica adicional – puramente presentacional
 </script>
 
 <style scoped>
 .marquee-track {
   display: flex;
   gap: 0;
-  animation: marquee 30s linear infinite;
+  animation: marquee 40s linear infinite;
   white-space: nowrap;
 }
 

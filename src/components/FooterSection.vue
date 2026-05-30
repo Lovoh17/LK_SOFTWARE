@@ -16,7 +16,8 @@
             </div>
           </div>
           <p class="text-ink/50 text-sm leading-relaxed">
-            Sistema de Facturación Electrónica DTE certificado para empresas salvadoreñas.
+            Plataforma empresarial con DTE certificado para El Salvador.
+            De facturación a ERP completo en un solo sistema.
           </p>
         </div>
 
@@ -52,7 +53,7 @@
       <!-- Bottom bar -->
       <div class="border-t border-etrib-teal/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-ink/40">
         <span>© {{ currentYear }} LK Software Development. Todos los derechos reservados.</span>
-        <span>e·trib · Sistema DTE · Ministerio de Hacienda El Salvador</span>
+        <span>e·trib · Tier 1 DTE · Tier 2 Inventario+POS · Tier 3 ERP · El Salvador</span>
       </div>
 
     </div>
@@ -71,8 +72,10 @@ const contactInfo = [
 ]
 
 const footerLinks = [
-  { href: '#planes',        label: 'Planes' },
-  { href: '#como-funciona', label: 'Cómo funciona' },
-  { href: '#contacto',      label: 'Contacto' },
+  { href: '#nosotros',       label: 'Nosotros' },
+  { href: '#beneficios',     label: 'Módulos' },
+  { href: '#planes',         label: 'Tiers y Planes' },
+  { href: '#como-funciona',  label: 'Cómo funciona' },
+  { href: '#contacto',       label: 'Contacto' },
 ]
 </script>

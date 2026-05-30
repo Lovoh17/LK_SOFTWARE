@@ -9,7 +9,7 @@
           <div class="font-display text-xl leading-none tracking-wider text-paper">
             e<span class="text-etrib-mint">·</span>trib
           </div>
-          <div class="text-[9px] tracking-[0.2em] uppercase text-paper/50">Facturación Electrónica · SV</div>
+          <div class="text-[9px] tracking-[0.2em] uppercase text-paper/50">Plataforma Empresarial · SV</div>
         </div>
       </div>
 
@@ -41,7 +41,8 @@ import LKLogo from './LKLogo.vue'
 
 const navLinks = [
   { href: '#nosotros',       label: 'Nosotros' },
-  { href: '#planes',         label: 'Planes' },
+  { href: '#beneficios',     label: 'Módulos' },
+  { href: '#planes',         label: 'Tiers' },
   { href: '#como-funciona',  label: 'Cómo funciona' },
   { href: '#contacto',       label: 'Contacto' },
 ]

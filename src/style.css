@@ -25,10 +25,35 @@
   --color-primary-950: #021518;
 }
 
+/* ─── Base refinements ────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: rgba(46, 196, 182, 0.25);
+    color: #0A3845;
+  }
+}
+
 /* ─── Custom global utilities ─────────────────────────── */
 @layer components {
   .badge {
     @apply bg-ink text-paper text-[10px] tracking-[0.12em] uppercase px-2 py-0.5;
+  }
+
+  .section-label {
+    @apply text-xs text-ink/40 uppercase tracking-[0.18em] font-medium;
+  }
+
+  .tier-tag {
+    @apply text-[9px] font-semibold tracking-[0.14em] uppercase px-2 py-0.5;
   }
 }
 

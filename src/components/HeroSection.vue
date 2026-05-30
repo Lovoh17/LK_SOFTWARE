@@ -1,23 +1,26 @@
 <template>
-  <section class="hero-grid pt-20 pb-16 md:pt-32 md:pb-20 min-h-screen flex flex-col justify-center">
+  <section class="hero-grid pt-20 pb-16 md:pt-32 md:pb-24 min-h-screen flex flex-col justify-center">
     <div class="max-w-6xl mx-auto px-6 w-full">
-      <div class="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+      <div class="grid md:grid-cols-2 gap-10 md:gap-20 items-center">
 
         <!-- Texto principal -->
         <div class="animate-fade-up">
-          <span class="badge mb-6 inline-block">El Salvador · DTE Certificado</span>
-          <h1 class="font-display text-5xl md:text-7xl lg:text-5xl leading-none text-ink mb-6">
-            FACTURACIÓN<br />
-            <span class="text-etrib-teal/30">ELECTRÓNICA</span><br />
-            SIMPLE
+          <span class="badge mb-6 inline-block">El Salvador · DTE · Inventario · ERP</span>
+          <h1 class="font-display text-5xl md:text-7xl lg:text-6xl leading-none text-ink mb-6">
+            PLATAFORMA<br />
+            <span class="text-etrib-teal/25">EMPRESARIAL</span><br />
+            ESCALABLE
           </h1>
-          <p class="text-ink/60 text-lg leading-relaxed mb-10 max-w-md">
-            Sistema de emisión de Documentos Tributarios Electrónicos (DTE) para empresas
-            salvadoreñas. Rápido, seguro y en cumplimiento con el Ministerio de Hacienda.
+          <p class="text-ink/60 text-lg leading-relaxed mb-4 max-w-md">
+            Desde la emisión de Documentos Tributarios Electrónicos hasta un ERP completo con
+            inventario, POS y contabilidad — todo en un solo sistema que crece con tu empresa.
+          </p>
+          <p class="text-ink/40 text-sm mb-10 max-w-md">
+            Certificado por el Ministerio de Hacienda de El Salvador.
           </p>
           <div class="flex flex-col sm:flex-row gap-4">
             <a href="#planes" class="bg-etrib-teal text-paper px-8 py-4 text-sm font-medium text-center hover:bg-etrib-deep transition-colors">
-              Ver planes →
+              Ver tiers y planes →
             </a>
             <a href="#como-funciona" class="border-2 border-etrib-teal text-etrib-teal px-8 py-4 text-sm font-medium text-center hover:bg-etrib-teal hover:text-paper transition-colors">
               Cómo funciona
@@ -32,14 +35,14 @@
           <div class="flex justify-center md:justify-start">
             <img
               src="../img/etrib-lockup-h.svg"
-              alt="e·trib – Facturación Electrónica"
+              alt="e·trib – Plataforma Empresarial"
               class="w-full max-w-sm md:max-w-full h-auto"
             />
           </div>
 
           <!-- Stats -->
           <div class="border-2 border-etrib-teal/30 p-6 bg-paper relative">
-            <div class="absolute -top-3 left-6 badge">Datos clave</div>
+            <div class="absolute -top-3 left-6 badge">Plataforma</div>
             <div class="grid grid-cols-2 gap-4 md:gap-6 mt-4">
               <div
                 v-for="stat in stats"
@@ -56,6 +59,29 @@
             </div>
           </div>
 
+          <!-- Tier progress indicator -->
+          <div class="border border-etrib-teal/20 p-4 bg-paper/60">
+            <div class="text-xs text-ink/40 uppercase tracking-widest mb-3">Progresión de tiers</div>
+            <div class="flex items-center gap-2">
+              <div
+                v-for="(tier, i) in tiers"
+                :key="tier.label"
+                class="flex items-center gap-2"
+              >
+                <div class="flex flex-col items-center gap-1">
+                  <div
+                    class="w-8 h-8 flex items-center justify-center text-xs font-display border-2 transition-colors"
+                    :class="tier.active ? 'bg-etrib-teal border-etrib-teal text-paper' : 'border-etrib-teal/30 text-ink/40'"
+                  >
+                    {{ String(i + 1).padStart(2, '0') }}
+                  </div>
+                  <div class="text-[9px] text-ink/40 uppercase tracking-wide whitespace-nowrap">{{ tier.label }}</div>
+                </div>
+                <div v-if="i < tiers.length - 1" class="w-6 h-px mt-0 mb-4" :class="tier.active ? 'bg-etrib-teal/40' : 'bg-etrib-teal/15'"></div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -65,10 +91,16 @@
 
 <script setup>
 const stats = [
-  { value: '3',    label: 'Planes disponibles' },
-  { value: '1500', label: 'DTE máx / mes' },
+  { value: '3',  label: 'Tiers disponibles' },
+  { value: '7',  label: 'Módulos de gestión' },
   { value: '24/7', label: 'Soporte técnico' },
   { value: '100%', label: 'Cumplimiento MH' },
+]
+
+const tiers = [
+  { label: 'DTE Básico', active: true },
+  { label: 'Inv + POS',  active: false },
+  { label: 'ERP',        active: false },
 ]
 </script>
 

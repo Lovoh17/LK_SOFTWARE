@@ -57,12 +57,13 @@
             </div>
 
             <div>
-              <label class="text-xs text-paper/40 uppercase tracking-widest block mb-1">Plan de interés</label>
+              <label class="text-xs text-paper/40 uppercase tracking-widest block mb-1">Tier de interés</label>
               <select v-model="form.plan" class="input-field bg-etrib-deep">
-                <option value="" disabled>Seleccionar plan</option>
-                <option>Básico – 500 DTE</option>
-                <option>Medio – 1,000 DTE</option>
-                <option>Pro – 1,500 DTE</option>
+                <option value="" disabled>Seleccionar tier</option>
+                <option>Tier 1 — DTE Básico (Facturación electrónica)</option>
+                <option>Tier 2 — Inventario + POS (Próximamente)</option>
+                <option>Tier 3 — ERP Completo (Roadmap)</option>
+                <option>Consulta general</option>
               </select>
             </div>
 

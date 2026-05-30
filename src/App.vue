@@ -4,6 +4,7 @@
     <HeroSection />
     <MarqueeBanner />
     <SobreNosotros />
+    <BeneficiosSection />
     <PlanesSection />
     <ComoFunciona />
     <DocumentosSection />
@@ -13,11 +14,11 @@
 </template>
 
 <script setup>
-
 import NavBar from './components/NavBar.vue'
 import HeroSection from './components/HeroSection.vue'
 import MarqueeBanner from './components/MarqueeBanner.vue'
 import SobreNosotros from './components/Sobrenosotros.vue'
+import BeneficiosSection from './components/Beneficiossection.vue'
 import PlanesSection from './components/PlanesSection.vue'
 import ComoFunciona from './components/ComoFunciona.vue'
 import DocumentosSection from './components/DocumentosSection.vue'
